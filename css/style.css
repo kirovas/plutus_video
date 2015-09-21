@@ -150,13 +150,13 @@ section {
  .toggle_mnu {
   width: 80px;
     height: 20px;
-    position: fixed;
+    position: absolute;
     z-index: 100;
     border: none;
     right: 45px;
     top: 20px;
     text-transform: uppercase;
-    color: #d64541;
+    color: #fff;
     font-family: 'Montserrat-Regular';
 	font-weight:700;
     font-size: 16px;
@@ -189,7 +189,7 @@ section {
   top: 0;
   width: 28px;
   height: 3px;
-  background: #d64541;
+  background: #fff;
   border: none;
   border-radius: 4px 4px 4px 4px;
   -webkit-transition: -webkit-transform 0.5s, top 0.2s;
@@ -202,7 +202,7 @@ section {
   width: 28px;
   height: 3px;
   top: 2.6px;
-  background: #d64541;
+  background: #fff;
   border: none;
   border-radius: 4px 4px 4px 4px;
   -webkit-transition: -webkit-transform 0.5s, top 0.2s;
@@ -215,7 +215,7 @@ section {
   width: 28px;
   height: 3px;
   top: 5.5px;
-  background: #d64541;
+  background: #fff;
   border: none;
   border-radius: 4px 4px 4px 4px;
   -webkit-transition: all 0.5s;
