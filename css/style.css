@@ -641,6 +641,12 @@ section {
 .counter{
 	position:relative;
 	padding:70px 0px 60px;
+	background:url(../images/bg1.jpg)no-repeat fixed;
+	background-position: 50% 50% !important;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .counter:after{
 	content:'';
