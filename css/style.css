@@ -57,8 +57,20 @@ img { /* Needed for mobile */
     margin-right:auto;
     
 }
- 
-
+ /* ==========================================================
+! animation
+========================================================== */
+  .animated{
+	opacity:0;
+ }
+ .animated.animation{
+	opacity:1;
+	-webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+ /* ==========================================================
+! Buttons
+========================================================== */
 .btn{
 	display:inline-block;
 	line-height:55px;
@@ -162,7 +174,9 @@ section {
 	position:relative;
 	z-index: 100;
 }
- /*###############################*/
+/* ==========================================================
+! Nav
+========================================================== */
  .toggle_mnu {
   width: 85px;
     height: 20px;
@@ -177,11 +191,6 @@ section {
 	font-weight:700;
     font-size: 16px;
     cursor: pointer;
-   /* background: rgba(255,255,255,0.2);
-    border-radius: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-	box-shadow:0px 1px 3px rgba(255,255,255,0.7)*/
   }
   .toggle_mnu:hover{
 	opacity:0.8;
@@ -308,6 +317,9 @@ section {
         .top_mnu ul a span:hover {
           background-color: rgba(255, 255, 255, 0.08); 
 		  }
+/* ==========================================================
+! Top
+========================================================== */
  .top_wrapper {
     display: table;
     width: 100%;
@@ -376,19 +388,17 @@ section {
     position: absolute;
 	}
 	
- /* section #why choose us */
+	/* ==========================================================
+! section header
+========================================================== */
  .section_header{
 	text-align:center;
 	margin-bottom:50px;
 	padding-left:15px;
 	padding-right:15px;
-	opacity:0;
+	
  }
-  .section_header.animation{
-	opacity:1;
-	-webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-  }
+
  .section_header h2{
 	font-family: 'Montserrat', sans-serif;
 	text-transform:uppercase;
@@ -410,7 +420,9 @@ section {
 	font-weight:300;
 	padding:0px 100px;
 }
-/* FEATURES*/
+/* ==========================================================
+! FEATURES
+========================================================== */
 
 .feature_grid{
 	position:relative;
@@ -421,13 +433,9 @@ section {
 .feature{
 	text-align:center;
 	margin-bottom:30px;
-	opacity:0;
+	
 }
-.feature.animation{
-	opacity:1;
-	-webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-}
+
 .feature_i{
 	display:inline-block;
 	text-align:center;
@@ -479,7 +487,9 @@ section {
   width: 100%;
 }
 
-/*SECTION PURCHASE*/
+/* ==========================================================
+! PURCHASE
+========================================================== */
 .purchase{
 	margin-top:30px;
 	background:#1e2a38;
@@ -497,24 +507,16 @@ section {
 	line-height:90px;
 	text-align:center;
 	margin-right:30px;
-	opacity:0;
+	
 }
-.purchase_i.animation{
-	opacity:1;
-	-webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-}
+
 .purchase_title{
 	float:left;
 	vertical-align:top;
 	padding-top: 10px;
-	opacity:0;
+	
 }
-.purchase_title.animation{
-	opacity:1;
-	-webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-}
+
 .purchase_title h3{
 	color:#fff;
 	font-size:30px;
@@ -531,7 +533,9 @@ section {
 .p-btn{
 	margin-top:18px;
 }
-/*PORTFOLIO*/
+/* ==========================================================
+! PORTFOLIO
+========================================================== */
 
 .s_portfolio ul,
 .s_portfolio li {
@@ -637,7 +641,9 @@ section {
     position: relative;
 }
 
-/*counter*/
+/* ==========================================================
+! COUNTER
+========================================================== */
 .counter{
 	position:relative;
 	padding:70px 0px 60px;
@@ -701,16 +707,13 @@ section {
 	font-weight:700;
 	font-family: 'Montserrat', sans-serif;
 }
-/*OUR TEAM*/
+/* ==========================================================
+! OUR TEAM
+========================================================== */
 .team_item{
 	padding:0px;
-	opacity:0;
 }
-.team_item.animation{
-	opacity:1;
-	-webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-}
+
 .team_item img {
     width: 100%; 
 	}
@@ -764,19 +767,7 @@ section {
     color: #fff;
     margin-bottom: 0; 
 	}
-  /*.team_item a {
-    background-color: transparent;
-    border: #fff 2px solid;
-    text-align:center;
-	width:50px;
-	height:50px;
-	line-height: 45px;
-	font-size:23px;
-	color:#fff;
-	border-radius:50%;
-    display: inline-block; 
-	margin:20px 5px;
-	}*/
+
 .team_item_cont h4{
 	color:#fff;
 	font-family: 'Montserrat', sans-serif;
@@ -791,7 +782,9 @@ section {
 	font-size:14px;
 	text-transform:uppercase;
 }
-/*PRICE TABLE*/
+/* ==========================================================
+! PRICING TABLE
+========================================================== */
 
 .dark_bg{
 	background:#1e2a38;
@@ -814,14 +807,8 @@ section {
 	font-weight:700;
 	position: relative;
 	margin-bottom:20px;
-	
-	opacity:0;
 }
-.plan.animation{
-	-webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-	opacity:1;
-}
+
 .plan_title{
 	text-align:center;
 	color:#fff;
@@ -896,7 +883,9 @@ li.label{
 	padding-bottom:68px;
 }
 
-/*Contacts*/
+/* ==========================================================
+! CONTACTS
+========================================================== */
 .form-group{
 	margin-bottom:40px;
 }
@@ -947,7 +936,9 @@ label {
 	text-align:center;
 }
 
-/*MAP*/
+/* ==========================================================
+! GOOGLE MAP
+========================================================== */
 .bottom_map{
 	padding:0px;
 	position:relative;
@@ -963,6 +954,9 @@ label {
 	background:rgba(214,69,65,0.8);
 	width:100%;
 }
+/* ==========================================================
+! SUB FOOTER
+========================================================== */
 .sf-logo{
 	float:left;
 	border-right:1px solid #fff;
@@ -1020,6 +1014,9 @@ label {
 .purchase.bottom{
 	margin-top:0px;
 }
+/* ==========================================================
+! FOOTER
+========================================================== */
 .footer{
 	text-align:center;
 	padding-top:30px;
@@ -1059,7 +1056,9 @@ label {
 	color:#767676;
 }
 
-
+/* ==========================================================
+! ETC
+========================================================== */
 
 .modal{
 	position:relative;
