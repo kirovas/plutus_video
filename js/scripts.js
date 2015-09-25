@@ -112,10 +112,12 @@ jQuery(document).ready(function($) {
             });
         });
 		
+/// ############### GOOGLE MAP #################	
+var amsterdam=new google.maps.LatLng(52.395715,4.888916);	
 function initialize() {
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
+          center: amsterdam, //// Location
           zoom: 8,
 		  scrollwheel: false,
     navigationControl: false,
@@ -123,7 +125,9 @@ function initialize() {
     scaleControl: false,
     draggable: false,
           mapTypeId: google.maps.MapTypeId.ROADMAP
+		  
         }
+		
         var map = new google.maps.Map(mapCanvas, mapOptions)
 		map.set('styles', [
   {
@@ -243,5 +247,13 @@ function initialize() {
         ]
     }
 ]);
+var marker=new google.maps.Marker({
+  position:amsterdam,
+  animation:google.maps.Animation.BOUNCE,
+  icon:'images/location_icon.png'
+  });
+
+marker.setMap(map);
       }
-      google.maps.event.addDomListener(window, 'load', initialize);
+	  
+google.maps.event.addDomListener(window, 'load', initialize);
